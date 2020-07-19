@@ -1,0 +1,188 @@
+/* old-standard-tt-regular - latin */
+@font-face {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/old-standard-tt-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Old Standard TT Regular'), local('OldStandardTT-Regular'),
+         url('../fonts/old-standard-tt-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/old-standard-tt-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/old-standard-tt-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/old-standard-tt-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/old-standard-tt-v12-latin-regular.svg#OldStandardTT') format('svg'); /* Legacy iOS */
+  }
+
+body{
+    background-color:#efc9af;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    line-height: 1.5em;
+    margin: 0;
+    min-width: 580px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main-header{
+
+    color:#1f8ac0;
+    font-family:'Old Standard TT';
+    text-align: center;
+    font-size:42px;
+}
+/* this doesnt work to indent, used &nbsp command in html to create non breaking space
+#head1{
+    margin-right: 110 px;           
+}
+#head2{
+    margin-left: 110 px;
+}
+*/
+
+#navbar{
+
+    color: #1f8ac0;
+    margin-top: 10px;
+    margin-left: -10%;
+    text-align: left;
+}
+
+#navbar a{
+    color: #1f8ac0;
+    text-decoration: none;
+    font-family:'Old Standard TT';
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 20px;
+    line-height: 1;
+    text-align: left;
+
+}
+
+.searchbox {
+
+    display: block;
+    
+    padding: 15px;
+    margin: 0 auto;
+    width: 50%;
+    border: none;
+    outline: none;
+    background: none;
+  
+    background-color: #EEE;
+    border-radius: 8px;
+  
+    color: #53565A;
+    font-size: 20px;
+    font-weight: 300;
+  
+    transition: 0.4s east-out;
+}
+
+.btn {
+    padding: 1px;
+    margin: 0px auto;
+    width: 10%;
+    border: none;
+    outline: none;
+    background: none;
+    float: left;
+    position: relative;
+    left: 45%;
+  
+    background-color: #EEE;
+    border-radius: 8px;
+  
+    color: #53565A;
+    font-size: 20px;
+    font-weight: 300;
+  
+    transition: 0.4s east-out;
+}
+.searchbox:hover{
+    box-shadow: 0px 0px 8px 3px #4484c4;
+  
+}
+
+
+#main{
+    float:left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+
+#main-footer{
+    background: #333;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media(max-width:600px){
+    #main{
+        width: 100%;
+        float: none;
+    }
+
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+}
+
+#resultid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 5px;
+    padding-right: 10px;
+}
+
+#title{
+    font-family:'Old Standard TT';
+    font-size: 28px;
+    font-weight: bold;
+    color: #1f8ac0;
+    flex: 0 0 0px;
+    margin-left: 220px;
+}
+#rating{
+    color: black;
+    flex: 0 1 0px;
+    margin-left: 10px;
+    min-width: 200px;
+    font-family:'Old Standard TT';
+    font-size: 20px;
+    font-weight: bold;
+}
+#image{
+    flex: 0 0 0px;
+    margin-left: 10px;
+}
+#plot{
+    color: black;
+    flex: 1 0 0px;
+    margin-left: 10px;
+    font-family:'Old Standard TT';
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 200px;
+}
+#content{
+    display: flex;
+    flex-direction: row;
+}
+hr {
+    border-top: 0;
+    border-color: white;
+}
